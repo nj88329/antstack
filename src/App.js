@@ -17,10 +17,10 @@ const [product, setMovie]=useState([]);
 const [start,setStart]=useState([false]);
 
 
-const amount=useSelector((state)=>
-    state.amount
-)
-  console.log('amount',amount)
+// const amount=useSelector((state)=>
+//     state.amount
+// )
+//   console.log('amount',amount)
  
 
 const addMovie=async()=>{
@@ -74,7 +74,7 @@ const addMovie=async()=>{
     </div>  
           <div>
           <h1 style={{position:'fixed',marginLeft:'40%'}}>
-            CartValue:{amount}
+            CartValue:{0}
           </h1>
 
           </div>

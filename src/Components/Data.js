@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import store from '../store';
 import { useSelector,useDispatch } from 'react-redux';
 import addproduct from '../actions';
@@ -22,7 +21,7 @@ const items=useSelector((state)=>{
   
   const dispatch=useDispatch();
   const value=(product)=> dispatch(addproduct(product))
-   const remove=(product)=> dispatch(removeProduct(product));
+  //  const remove=(product)=> dispatch(removeProduct(product));
   
   
   // const remove=(product)=> dispatch(addproduct(product))
@@ -45,7 +44,7 @@ return(
                     
 
                         <button style={{height:'20px',width:'90px',backgroundColor:'red'}} value={mov.numReviews} onClick={(e)=>value(mov)}>Add Product</button>
-                        <button style={{height:'20px',width:'90px',backgroundColor:'red'}} value={mov.numReviews} onClick={(e)=>remove(mov)}>Remove</button>
+                        <button style={{height:'20px',width:'90px',backgroundColor:'red'}} value={mov.numReviews} >Remove</button>
                         {/* {
                         items.map((item,id)=>{
                             if(item.title===props.product.title){
